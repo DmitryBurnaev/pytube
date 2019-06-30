@@ -29,3 +29,7 @@ clean-pyc:
 
 install: clean
 	python setup.py install
+
+release: clean
+	pipenv run python setup.py upload
+	make clean
