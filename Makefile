@@ -30,6 +30,8 @@ clean-pyc:
 install: clean
 	python setup.py install
 
-release: clean
+release:
+	pipenv run bumpversion release
+	make clean
 	pipenv run python setup.py upload
 	make clean
