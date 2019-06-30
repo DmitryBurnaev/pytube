@@ -242,7 +242,8 @@ class YouTube(object):
         :rtype: str
 
         """
-        return self.player_config_args['thumbnail_url']
+        # return self.player_config_args['thumbnail_url']
+        return f"https://img.youtube.com/vi/{self.video_id}/maxresdefault.jpg"
 
     @property
     def title(self):
